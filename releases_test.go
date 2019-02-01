@@ -275,6 +275,7 @@ func TestReleasesService_CreateReleaseWithAsset(t *testing.T) {
 		if !strings.Contains(string(b), "assets") {
 			t.Errorf("expected request body to have assets, got %s", string(b))
 		}
+		fmt.Println(string(b))
 		fmt.Fprint(w, exampleReleaseRsp)
 	})
 

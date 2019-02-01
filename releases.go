@@ -107,7 +107,7 @@ type ReleaseAssets struct {
 // GitLab API docs: https://docs.gitlab.com/ce/api/releases/index.html#create-a-release
 type ReleaseAssetLink struct {
 	Name string `url:"name" json:"name"`
-	URL  string `url:"ref" json:"ref"`
+	URL  string `url:"url" json:"url"`
 }
 
 // CreateReleaseOptions represents CreateRelease() options.
